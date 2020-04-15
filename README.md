@@ -1,2 +1,2 @@
-# TestLoadCalculate
- testTestLoadCalculate
+# 统计load方法耗时
+ - 基于自己的理解实现load方法耗时统计
