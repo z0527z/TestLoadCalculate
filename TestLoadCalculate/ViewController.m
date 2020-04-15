@@ -14,10 +14,27 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
++ (void)load {
+//    NSLog(@"---> %s", __func__);
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+
+@end
+
+
+@interface ViewController (sleep_300ms_1)
+
+@end
+
+@implementation ViewController (sleep_300ms_1)
+
++ (void)load {
+    usleep(300 * 1000);
+//    NSLog(@"---> %s", __func__);
+}
 
 @end

@@ -8,31 +8,124 @@
 
 /* Begin PBXBuildFile section */
 		437739B92444561E00E418BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437739B82444561E00E418BF /* AppDelegate.m */; };
-		437739BC2444561E00E418BF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437739BB2444561E00E418BF /* SceneDelegate.m */; };
 		437739BF2444561E00E418BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437739BE2444561E00E418BF /* ViewController.m */; };
-		437739C22444561E00E418BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437739C02444561E00E418BF /* Main.storyboard */; };
 		437739C42444561F00E418BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437739C32444561F00E418BF /* Assets.xcassets */; };
 		437739C72444561F00E418BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437739C52444561F00E418BF /* LaunchScreen.storyboard */; };
 		437739CA2444561F00E418BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437739C92444561F00E418BF /* main.m */; };
+		437739D9244457A400E418BF /* DynamicLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 437739D7244457A400E418BF /* DynamicLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		437739DC244457A400E418BF /* DynamicLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437739D5244457A400E418BF /* DynamicLib.framework */; };
+		437739DD244457A400E418BF /* DynamicLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 437739D5244457A400E418BF /* DynamicLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		437739E3244457B900E418BF /* DynamicLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 437739E2244457B800E418BF /* DynamicLib.m */; };
+		437739ED2444580B00E418BF /* LogComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 437739EB2444580B00E418BF /* LogComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		437739F02444580B00E418BF /* LogComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437739E92444580B00E418BF /* LogComponent.framework */; };
+		437739F12444580B00E418BF /* LogComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 437739E92444580B00E418BF /* LogComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		437739F72444582500E418BF /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 437739F52444582500E418BF /* Logger.h */; };
+		437739F82444582500E418BF /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 437739F62444582500E418BF /* Logger.m */; };
+		43773A13244459C600E418BF /* A4LoadMeasure.h in Headers */ = {isa = PBXBuildFile; fileRef = 43773A11244459C600E418BF /* A4LoadMeasure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43773A16244459C600E418BF /* A4LoadMeasure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43773A0F244459C600E418BF /* A4LoadMeasure.framework */; };
+		43773A17244459C600E418BF /* A4LoadMeasure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43773A0F244459C600E418BF /* A4LoadMeasure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		43773A1C24445A0700E418BF /* A4LoadMeasure.m in Sources */ = {isa = PBXBuildFile; fileRef = 43773A1B24445A0700E418BF /* A4LoadMeasure.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		437739DA244457A400E418BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437739AC2444561E00E418BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 437739D4244457A400E418BF;
+			remoteInfo = DynamicLib;
+		};
+		437739EE2444580B00E418BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437739AC2444561E00E418BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 437739E82444580B00E418BF;
+			remoteInfo = LogComponent;
+		};
+		43773A14244459C600E418BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437739AC2444561E00E418BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43773A0E244459C600E418BF;
+			remoteInfo = A4LoadMeasure;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		437739E1244457A400E418BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				43773A17244459C600E418BF /* A4LoadMeasure.framework in Embed Frameworks */,
+				437739DD244457A400E418BF /* DynamicLib.framework in Embed Frameworks */,
+				437739F12444580B00E418BF /* LogComponent.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		437739B42444561E00E418BF /* TestLoadCalculate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLoadCalculate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		437739B72444561E00E418BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		437739B82444561E00E418BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		437739BA2444561E00E418BF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		437739BB2444561E00E418BF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		437739BD2444561E00E418BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		437739BE2444561E00E418BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		437739C12444561E00E418BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		437739C32444561F00E418BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		437739C62444561F00E418BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		437739C82444561F00E418BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		437739C92444561F00E418BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		437739D5244457A400E418BF /* DynamicLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		437739D7244457A400E418BF /* DynamicLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicLib.h; sourceTree = "<group>"; };
+		437739D8244457A400E418BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437739E2244457B800E418BF /* DynamicLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLib.m; sourceTree = "<group>"; };
+		437739E92444580B00E418BF /* LogComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		437739EB2444580B00E418BF /* LogComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogComponent.h; sourceTree = "<group>"; };
+		437739EC2444580B00E418BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437739F52444582500E418BF /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		437739F62444582500E418BF /* Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		43773A0F244459C600E418BF /* A4LoadMeasure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = A4LoadMeasure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43773A11244459C600E418BF /* A4LoadMeasure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A4LoadMeasure.h; sourceTree = "<group>"; };
+		43773A12244459C600E418BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43773A1B24445A0700E418BF /* A4LoadMeasure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A4LoadMeasure.m; sourceTree = "<group>"; };
+		43773A1D2444643900E418BF /* A4LoadMeasureDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A4LoadMeasureDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		437739B12444561E00E418BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43773A16244459C600E418BF /* A4LoadMeasure.framework in Frameworks */,
+				437739DC244457A400E418BF /* DynamicLib.framework in Frameworks */,
+				437739F02444580B00E418BF /* LogComponent.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437739D2244457A400E418BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437739E62444580B00E418BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437739FB2444599500E418BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43773A0C244459C600E418BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				437739B62444561E00E418BF /* TestLoadCalculate */,
+				437739D6244457A400E418BF /* DynamicLib */,
+				437739EA2444580B00E418BF /* LogComponent */,
+				43773A10244459C600E418BF /* A4LoadMeasure */,
 				437739B52444561E00E418BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				437739B42444561E00E418BF /* TestLoadCalculate.app */,
+				437739D5244457A400E418BF /* DynamicLib.framework */,
+				437739E92444580B00E418BF /* LogComponent.framework */,
+				43773A0F244459C600E418BF /* A4LoadMeasure.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,11 +162,8 @@
 			children = (
 				437739B72444561E00E418BF /* AppDelegate.h */,
 				437739B82444561E00E418BF /* AppDelegate.m */,
-				437739BA2444561E00E418BF /* SceneDelegate.h */,
-				437739BB2444561E00E418BF /* SceneDelegate.m */,
 				437739BD2444561E00E418BF /* ViewController.h */,
 				437739BE2444561E00E418BF /* ViewController.m */,
-				437739C02444561E00E418BF /* Main.storyboard */,
 				437739C32444561F00E418BF /* Assets.xcassets */,
 				437739C52444561F00E418BF /* LaunchScreen.storyboard */,
 				437739C82444561F00E418BF /* Info.plist */,
@@ -76,7 +172,74 @@
 			path = TestLoadCalculate;
 			sourceTree = "<group>";
 		};
+		437739D6244457A400E418BF /* DynamicLib */ = {
+			isa = PBXGroup;
+			children = (
+				437739D7244457A400E418BF /* DynamicLib.h */,
+				437739E2244457B800E418BF /* DynamicLib.m */,
+				437739D8244457A400E418BF /* Info.plist */,
+			);
+			path = DynamicLib;
+			sourceTree = "<group>";
+		};
+		437739EA2444580B00E418BF /* LogComponent */ = {
+			isa = PBXGroup;
+			children = (
+				437739EB2444580B00E418BF /* LogComponent.h */,
+				437739F52444582500E418BF /* Logger.h */,
+				437739F62444582500E418BF /* Logger.m */,
+				437739EC2444580B00E418BF /* Info.plist */,
+			);
+			path = LogComponent;
+			sourceTree = "<group>";
+		};
+		43773A10244459C600E418BF /* A4LoadMeasure */ = {
+			isa = PBXGroup;
+			children = (
+				43773A1D2444643900E418BF /* A4LoadMeasureDefine.h */,
+				43773A11244459C600E418BF /* A4LoadMeasure.h */,
+				43773A1B24445A0700E418BF /* A4LoadMeasure.m */,
+				43773A12244459C600E418BF /* Info.plist */,
+			);
+			path = A4LoadMeasure;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		437739D0244457A400E418BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437739D9244457A400E418BF /* DynamicLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437739E42444580B00E418BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437739F72444582500E418BF /* Logger.h in Headers */,
+				437739ED2444580B00E418BF /* LogComponent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437739F92444599500E418BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43773A0A244459C600E418BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43773A13244459C600E418BF /* A4LoadMeasure.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		437739B32444561E00E418BF /* TestLoadCalculate */ = {
@@ -86,15 +249,73 @@
 				437739B02444561E00E418BF /* Sources */,
 				437739B12444561E00E418BF /* Frameworks */,
 				437739B22444561E00E418BF /* Resources */,
+				437739E1244457A400E418BF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				43773A15244459C600E418BF /* PBXTargetDependency */,
+				437739DB244457A400E418BF /* PBXTargetDependency */,
+				437739EF2444580B00E418BF /* PBXTargetDependency */,
 			);
 			name = TestLoadCalculate;
 			productName = TestLoadCalculate;
 			productReference = 437739B42444561E00E418BF /* TestLoadCalculate.app */;
 			productType = "com.apple.product-type.application";
+		};
+		437739D4244457A400E418BF /* DynamicLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437739DE244457A400E418BF /* Build configuration list for PBXNativeTarget "DynamicLib" */;
+			buildPhases = (
+				437739D0244457A400E418BF /* Headers */,
+				437739D1244457A400E418BF /* Sources */,
+				437739D2244457A400E418BF /* Frameworks */,
+				437739D3244457A400E418BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicLib;
+			productName = DynamicLib;
+			productReference = 437739D5244457A400E418BF /* DynamicLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		437739E82444580B00E418BF /* LogComponent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437739F22444580B00E418BF /* Build configuration list for PBXNativeTarget "LogComponent" */;
+			buildPhases = (
+				437739E42444580B00E418BF /* Headers */,
+				437739E52444580B00E418BF /* Sources */,
+				437739E62444580B00E418BF /* Frameworks */,
+				437739E72444580B00E418BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogComponent;
+			productName = LogComponent;
+			productReference = 437739E92444580B00E418BF /* LogComponent.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43773A0E244459C600E418BF /* A4LoadMeasure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43773A18244459C600E418BF /* Build configuration list for PBXNativeTarget "A4LoadMeasure" */;
+			buildPhases = (
+				43773A0A244459C600E418BF /* Headers */,
+				43773A0B244459C600E418BF /* Sources */,
+				43773A0C244459C600E418BF /* Frameworks */,
+				43773A0D244459C600E418BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = A4LoadMeasure;
+			productName = A4LoadMeasure;
+			productReference = 43773A0F244459C600E418BF /* A4LoadMeasure.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +327,18 @@
 				ORGANIZATIONNAME = jolin.ding;
 				TargetAttributes = {
 					437739B32444561E00E418BF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					437739D4244457A400E418BF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					437739E82444580B00E418BF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					437739FD2444599500E418BF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					43773A0E244459C600E418BF = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -124,6 +357,9 @@
 			projectRoot = "";
 			targets = (
 				437739B32444561E00E418BF /* TestLoadCalculate */,
+				437739D4244457A400E418BF /* DynamicLib */,
+				437739E82444580B00E418BF /* LogComponent */,
+				43773A0E244459C600E418BF /* A4LoadMeasure */,
 			);
 		};
 /* End PBXProject section */
@@ -135,7 +371,34 @@
 			files = (
 				437739C72444561F00E418BF /* LaunchScreen.storyboard in Resources */,
 				437739C42444561F00E418BF /* Assets.xcassets in Resources */,
-				437739C22444561E00E418BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437739D3244457A400E418BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437739E72444580B00E418BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437739FC2444599500E418BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43773A0D244459C600E418BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,21 +412,61 @@
 				437739BF2444561E00E418BF /* ViewController.m in Sources */,
 				437739B92444561E00E418BF /* AppDelegate.m in Sources */,
 				437739CA2444561F00E418BF /* main.m in Sources */,
-				437739BC2444561E00E418BF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437739D1244457A400E418BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437739E3244457B900E418BF /* DynamicLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437739E52444580B00E418BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437739F82444582500E418BF /* Logger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437739FA2444599500E418BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43773A0B244459C600E418BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43773A1C24445A0700E418BF /* A4LoadMeasure.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		437739C02444561E00E418BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				437739C12444561E00E418BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		437739DB244457A400E418BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 437739D4244457A400E418BF /* DynamicLib */;
+			targetProxy = 437739DA244457A400E418BF /* PBXContainerItemProxy */;
 		};
+		437739EF2444580B00E418BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 437739E82444580B00E418BF /* LogComponent */;
+			targetProxy = 437739EE2444580B00E418BF /* PBXContainerItemProxy */;
+		};
+		43773A15244459C600E418BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43773A0E244459C600E418BF /* A4LoadMeasure */;
+			targetProxy = 43773A14244459C600E418BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		437739C52444561F00E418BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,13 +595,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AQBCWA98S;
 				INFOPLIST_FILE = TestLoadCalculate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huangli.TestLoadCalculate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,13 +613,170 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AQBCWA98S;
 				INFOPLIST_FILE = TestLoadCalculate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huangli.TestLoadCalculate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		437739DF244457A400E418BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 358J8T44CR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangli.DynamicLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		437739E0244457A400E418BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 358J8T44CR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangli.DynamicLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		437739F32444580B00E418BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AQBCWA98S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LogComponent/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangli.LogComponent;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		437739F42444580B00E418BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AQBCWA98S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LogComponent/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangli.LogComponent;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		43773A19244459C600E418BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AQBCWA98S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = A4LoadMeasure/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangli.A4LoadMeasure;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43773A1A244459C600E418BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AQBCWA98S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = A4LoadMeasure/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangli.A4LoadMeasure;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -336,6 +797,33 @@
 			buildConfigurations = (
 				437739CE2444561F00E418BF /* Debug */,
 				437739CF2444561F00E418BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		437739DE244457A400E418BF /* Build configuration list for PBXNativeTarget "DynamicLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437739DF244457A400E418BF /* Debug */,
+				437739E0244457A400E418BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		437739F22444580B00E418BF /* Build configuration list for PBXNativeTarget "LogComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437739F32444580B00E418BF /* Debug */,
+				437739F42444580B00E418BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43773A18244459C600E418BF /* Build configuration list for PBXNativeTarget "A4LoadMeasure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43773A19244459C600E418BF /* Debug */,
+				43773A1A244459C600E418BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
